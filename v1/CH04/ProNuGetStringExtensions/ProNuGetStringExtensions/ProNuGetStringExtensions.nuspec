@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Maarten Balliauw, Xavier Decoster</authors>
+    <owners>Maarten Balliauw, Xavier Decoster</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Some useful string extensions for everyday use.</description>
+    <copyright>Copyright 2011 Maarten Balliauw and Xavier Decoster</copyright>
+    <tags>string extensions extension methods truncate</tags>
+  </metadata>
+</package>

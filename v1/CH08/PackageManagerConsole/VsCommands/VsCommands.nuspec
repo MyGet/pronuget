@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>VsCommands</id>
+    <version>1.0.0</version>
+    <authors>Maarten Balliauw</authors>
+    <owners>Maarten Balliauw</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Adds cmd-lets NuGet PowerShell Console.</description>
+    <releaseNotes>Adds cmd-lets to the NuGet PowerShell Console.</releaseNotes>
+    <copyright>Copyright Maarten Balliauw 2011</copyright>
+    <tags>nuget powershell pronuget apress</tags>
+  </metadata>
+</package>

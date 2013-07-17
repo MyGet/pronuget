@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>HelloWorld</id>
+    <version>1.1.0.0</version>
+    <title>HelloWorld</title>
+    <authors>Maarten Balliauw &amp; Xavier Decoster</authors>
+    <owners>Maarten Balliauw &amp; Xavier Decoster</owners>
+    <description>HelloWorld sample application</description>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2011</copyright>
+  </metadata>
+</package>
