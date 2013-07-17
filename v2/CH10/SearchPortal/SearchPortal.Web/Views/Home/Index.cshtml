@@ -1,0 +1,36 @@
+﻿@model SearchPortal.Web.ViewModels.SearchFormViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>SearchPortal.</h1>
+                <h2>Your place to start searching.</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+
+@using (Html.BeginForm())
+{
+    <div class="editor-label">
+        Search for:
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.SearchTerm)
+    </div>
+    
+    <div class="editor-label">
+        Using search engine:
+    </div>
+    <div class="editor-field">
+        @Html.DropDownListFor(model => model.SearchEngine, Model.AvailableSearchEngines)
+    </div>
+    
+    <p>
+        <input type="submit" value="Search"/>
+    </p>
+}

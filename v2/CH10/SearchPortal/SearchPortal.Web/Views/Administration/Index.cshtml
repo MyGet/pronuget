@@ -1,0 +1,26 @@
+﻿@model SearchPortal.Web.ViewModels.AdministrationViewModel
+
+@{
+    ViewBag.Title = "Administration";
+}
+
+<h2>Plugins</h2>
+
+<ul>
+@foreach (var plugin in Model.Plugins)
+{
+    <li>
+        <strong>@plugin.PackageId @plugin.PackageVersion</strong><br />
+        <em>@plugin.PackageDescription</em>
+
+        @if (!plugin.IsInstalled)
+        {
+            @Html.ActionLink("[install]", "Install", "Administration", new { packageId = plugin.PackageId, packageVersion = plugin.PackageVersion }, null)
+        }
+        else
+        {
+            @Html.ActionLink("[uninstall]", "Uninstall", "Administration", new { packageId = plugin.PackageId, packageVersion = plugin.PackageVersion }, null)
+        }
+    </li>
+}
+</ul>

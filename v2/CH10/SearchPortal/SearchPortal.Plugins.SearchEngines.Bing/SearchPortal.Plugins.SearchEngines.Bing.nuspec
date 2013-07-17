@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Maarten Balliauw, Xavier Decoster</authors>
+    <owners>Maarten Balliauw, Xavier Decoster</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright Maarten Balliauw and Xavier Decoster 2013</copyright>
+    <tags>pronuget apress plugin searchportalplugin</tags>
+  </metadata>
+</package>
