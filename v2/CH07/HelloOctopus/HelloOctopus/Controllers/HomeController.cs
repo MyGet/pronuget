@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace HelloWorld.Controllers
+namespace HelloOctopus.Controllers
 {
     public class HomeController : Controller
     {

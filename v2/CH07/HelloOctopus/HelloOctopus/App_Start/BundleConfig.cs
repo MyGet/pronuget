@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace HelloWorld
+namespace HelloOctopus.App_Start
 {
     public class BundleConfig
     {

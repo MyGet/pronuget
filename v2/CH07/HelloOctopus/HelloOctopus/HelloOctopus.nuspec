@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>HelloOctopus</id>
+    <version>2.0.0</version>
+    <title>HelloOctopus</title>
+    <authors>Xavier Decoster &amp; Maarten Balliauw</authors>
+    <owners>Xavier Decoster &amp; Maarten Balliauw</owners>
+    <description>Hello OctopusDeploy!</description>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright 2011 - 2013</copyright>
+  </metadata>
+</package>

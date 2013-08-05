@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace HelloWorld
+namespace HelloOctopus.App_Start
 {
     public class RouteConfig
     {

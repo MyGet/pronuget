@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace HelloWorld
+namespace HelloOctopus.App_Start
 {
     public class FilterConfig
     {
