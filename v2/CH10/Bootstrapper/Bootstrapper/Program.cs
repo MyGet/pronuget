@@ -28,7 +28,7 @@ namespace Bootstrapper
                 Console.WriteLine("Installing {0}...", ApplicationExecutableName);
                 IPackage package = packageRepository.FindPackage(ApplicationPackageName);
                 File.WriteAllText(versionFile, package.Version.ToString());
-                packageManager.InstallPackage(ApplicationPackageName);
+                packageManager.InstallPackage(package, true, false);
             }
             else
             {
@@ -39,8 +39,7 @@ namespace Bootstrapper
                 if (package.Version > currentVersion)
                 {
                     Console.WriteLine("Updating to version {0}...", package.Version);
-                    packageManager.UpdatePackage(ApplicationPackageName, 
-                        package.Version, false, false);
+                    packageManager.UpdatePackage(package, false, false);
                     File.WriteAllText(versionFile, package.Version.ToString());
                 }
                 else

@@ -22,20 +22,19 @@ namespace SearchPortal.Web.Framework
             _packageManager = new PackageManager(_packageRepository, _pluginFolder);
         }
 
-        public IEnumerable<PluginModel> ListPlugins()
+        public IList<PluginModel> ListPlugins()
         {
-            IPackage dummy = null;
-
             return _packageManager.SourceRepository.GetPackages()
-                .Where(p => p.Tags.Contains("searchportalplugin"))
+                .Where(p => p.Tags.ToLower().Contains("searchportalplugin"))
                 .OrderBy(p => p.Id)
+                .Select(p => new { Id = p.Id, Version = p.Version, Description = p.Description})
                 .ToList()
                 .Select(p => new PluginModel()
                                  {
                                      PackageId = p.Id,
                                      PackageVersion = p.Version.ToString(),
                                      PackageDescription = p.Description,
-                                     IsInstalled = _packageManager.LocalRepository.TryFindPackage(p.Id, p.Version, out dummy)
+                                     IsInstalled = _packageManager.LocalRepository.Exists(p.Id, p.Version)
                                  })
                 .ToList();
         }
@@ -43,8 +42,6 @@ namespace SearchPortal.Web.Framework
         public void Install(string packageId, string packageVersion)
         {
             _packageManager.InstallPackage(packageId, new SemanticVersion(packageVersion));
-
-            HostingEnvironment.InitiateShutdown();
         }
 
         public void Uninstall(string packageId, string packageVersion)

@@ -6,7 +6,7 @@ namespace SearchPortal.Web.Framework.Contracts
 {
     public interface IPluginManager
     {
-        IEnumerable<PluginModel> ListPlugins();
+        IList<PluginModel> ListPlugins();
         void Install(string packageId, string packageVersion);
         void Uninstall(string packageId, string packageVersion);
     }
