@@ -1,0 +1,1 @@
+﻿SymbolSource.DemoLibrary\1.0.0.0\Binaries\SymbolSource.DemoLibrary.Calculator\8A8F33D5218F42AE9D37806C338068431
